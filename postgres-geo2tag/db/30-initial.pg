@@ -1,0 +1,5 @@
+INSERT INTO users (email, login, password) VALUES ('gets_user@example.com', 'gets_user', 'gets_user_password');
+
+INSERT INTO category VALUES (1, 'obstacles', 'Other audio', '{"icon":"http://gets.cs.petrsu.ru/obstacle/icons/light.png"}', 1);
+
+INSERT INTO "adminUsers" VALUES (1, 1);
