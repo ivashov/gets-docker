@@ -1,4 +1,4 @@
-FROM postgres:9.3.6
+FROM postgres:9.3
 MAINTAINER ivashov@cs.petrsu.ru
 ENV POSTGRES_PASSWORD geo2tag
 ENV POSTGRES_USER geo2tag
