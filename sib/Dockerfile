@@ -26,4 +26,4 @@ COPY setup.sh /setup.sh
 RUN /setup.sh
 
 COPY run.sh /run.sh
-CMD /run.sh
+CMD ["/bin/bash", "/run.sh"]
