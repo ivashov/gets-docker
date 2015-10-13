@@ -1,4 +1,4 @@
-FROM ubuntu:trusty
+FROM debian:jessie
 MAINTAINER ivashov@cs.petrsu.ru
 RUN apt-get update && apt-get install -y \
         dbus libdbus-1-3 \
