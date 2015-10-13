@@ -1,6 +1,6 @@
 FROM debian:jessie
 MAINTAINER ivashov@cs.petrsu.ru
-RUN apt-get update && apt-get install -y \
+RUN apt-get update && apt-get install --no-install-recommends -y \
         dbus libdbus-1-3 \
         libdbus-1-dev \
         libdbus-glib-1-2 \
