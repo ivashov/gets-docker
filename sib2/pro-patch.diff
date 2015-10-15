@@ -1,0 +1,25 @@
+diff -ur cutesib-0.1.0-orig/CuteSIB/CuteSIB.pro cutesib-0.1.0/CuteSIB/CuteSIB.pro
+--- cutesib-0.1.0-orig/CuteSIB/CuteSIB.pro	2015-07-22 10:36:06.000000000 +0300
++++ cutesib-0.1.0/CuteSIB/CuteSIB.pro	2015-10-15 14:07:57.333675401 +0300
+@@ -10,7 +10,7 @@
+ 
+ SIB_NAME = CuteSIB
+ SIB_CONFIG = cutesib.ini
+-SIB_CONFIG_PATH = ./$$SIB_CONFIG
++SIB_CONFIG_PATH = /usr/local/lib/
+ VERSION = 0.1
+ 
+ windows {
+@@ -52,12 +52,6 @@
+ QT_MESSAGE_PATTERN="[%{type}] %{appname} (%{file}:%{line}) - %{message}"
+ 
+ 
+-# Add target for Makefile to copy config file to 'build' dir.
+-copydata.commands = $(COPY_FILE) $$PWD/$$SIB_CONFIG $$OUT_PWD
+-first.depends = $(first) copydata
+-export(first.depends)
+-export(copydata.commands)
+-QMAKE_EXTRA_TARGETS += first copydata
+ 
+ 
+ DEFINES += SIB_VERSION=\\\"$$VERSION\\\"
